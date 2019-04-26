@@ -4,8 +4,7 @@
 
 ## Dataset
 
-> Provide basic information about your dataset in this section. If you selected your own dataset, make sure you note the source of your data and summarize any data wrangling steps that you performed before you started your exploration.
-Flight data for the year 2008 was selected for analysis. It contained over 7 million records. Some of the data wrangling done was as follows
+> The assumption here is that the 2008.csv flight data file is available for analysis, though it is not included in the repository. Flight data for the year 2008 was selected for analysis. It contained over 7 million records. Some of the data wrangling done was as follows.  
 - The Month and Day of Week columns were numerical. They were converted to appropriate text values to become categorical
 - All records had an arrival delay value even if the flight was on time or early. So in order to distinguish a delayed flight from a flight that was early/on time, a FlighStatus column was added. From the data, it was noted that the different delay factors had values only if the arrival delay was at least 15 minutes. So any record with an arrival delay below 15 minutes was marked as "On Time" 
 
